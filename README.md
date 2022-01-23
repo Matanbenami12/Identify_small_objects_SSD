@@ -1,6 +1,6 @@
 # Identify_small_objects_SSD
 In this project we will be investigating the difficulty in identifying small objects and its distance with our own data set ,by used SSD algorithm. 
-We will discuss the baseline SSD, then we discuss an atrous filter to improve the resolution of feature maps to improve the SSD algorithm and improved the small object detection effect by data augmentation.
+We will discuss and compare between SSDv1 to SSDv1 with atrous filter 
 
 
 1.	Collect a few hundred images that contain your object - The bare minimum would be about 100, ideally more like 500+, but, the more images you have, the more tedious step 2 is...
@@ -10,9 +10,9 @@ We will discuss the baseline SSD, then we discuss an atrous filter to improve th
 5.	Setup a .config file for the model of choice 
 6.	Train
 7.	Export graph from new trained model
-8.	Detect custom objects in real time!
+8.	Detect custom objects in real time for both SSD and SSD with atrous filter  !
+9.	Compare between SSD to SSD with atrous filter 
 
-/
 # From tensorflow/models/
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 
