@@ -1,0 +1,26 @@
+<annotation>
+	<folder>imag4</folder>
+	<filename>IMG_20200226_105945.jpg</filename>
+	<path>C:\Users\matan\Desktop\tensorflow1\imag\imag4\IMG_20200226_105945.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Warning</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2</xmin>
+			<ymin>160</ymin>
+			<xmax>197</xmax>
+			<ymax>340</ymax>
+		</bndbox>
+	</object>
+</annotation>
