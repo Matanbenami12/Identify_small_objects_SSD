@@ -1,10 +1,10 @@
 # Identify_small_objects_SSD
 In this project we will be investigating the difficulty in identifying small objects and its distance with our own data set ,by used SSD algorithm. 
-We will discuss and compare between SSDv1 to SSDv1 with atrous filter 
+We will discuss and compare between SSD_v1 to SSD_v1 with atrous filter 
 
 
 1.	Collect a few hundred images that contain your object - The bare minimum would be about 100, ideally more like 500+, but, the more images you have, the more tedious step 2 is...
-2.	Annotate/label the images, ideally with a program. LabelImg. This process is basically drawing boxes around your object(s) in an image. The label program automatically will create an XML file that describes the object(s) in the pictures.
+2.	label the images, ideally with a program. LabelImg. This process is basically drawing boxes around your object in an image. The label program automatically will create an XML file that describes the object in the pictures.
 3.	Split this data into train/test samples
 4.	Generate TF Records from these splits
 5.	Setup a .config file for the model of choice 
