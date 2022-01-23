@@ -17,7 +17,7 @@ We will discuss and compare between SSD_v1 to SSD_v1 with atrous filter
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 
 
-
+[ https://github.com/tensorflow/models]
 
 
 
