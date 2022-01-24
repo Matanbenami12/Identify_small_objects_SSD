@@ -9,14 +9,14 @@ https://www.youtube.com/watch?v=r7-WPbx8VuY&ab_channel=sentdex
 
 Ones u install GPU TensorFlow the other Python dependencies are covered with
 
-
+```
 pip install jupyter
 pip install matplotlib
 pip install pillow
 pip install lxml
 pip install numpy
 pip install opencv-python
-
+```
 
 [ https://github.com/tensorflow/models].
 
