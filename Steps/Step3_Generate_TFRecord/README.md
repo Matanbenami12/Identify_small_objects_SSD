@@ -4,8 +4,17 @@ Now, just grab the files generate_tfrecord.py and the utils directory. The only 
 You need to change this to your specific class. In our case, we just have ONE class and Path.
 
 # Path:
+```ruby
+flags = tf.app.flags
+flags.DEFINE_string('csv_input', "C:/Users/matan/Desktop/object_detection_project/data/{}_labels.csv".format(directory),
+                'Path to the CSV input')
+flags.DEFINE_string('output_path', "C:/Users/matan/Desktop/object_detection_project/data/{}.record".format(directory),
+                'Path to output TFRecord')
+flags.DEFINE_string('image_dir', "C:/Users/matan/Desktop/object_detection_project/images/{}".format(directory),
+                'Path to images')
+FLAGS = flags.FLAGS
+```
 
-![image](https://user-images.githubusercontent.com/56115477/149851068-227024fd-463e-44b4-94c4-415b92e60eb3.png)
 
 
 
