@@ -5,7 +5,7 @@ We will discuss and compare between SSD_v1 to SSD_v1 with atrous filter
 To begin, you are going to make sure you have GPU version of TensorFlow(.1) and all of the dependencies 
 If you need to install GPU TensorFlow we recommend to follow this video (How to installTensorFlow_GPU )
 https://www.youtube.com/watch?v=r7-WPbx8VuY&ab_channel=sentdex
-- [ ] 1. Make sure you are install TensorFlow_GPU version 1.14  
+- [ ] 1. Make sure you are install TensorFlow_GPU version 1.14  and you are using python version 3.7  .
 
 
 Ones you are install GPU TensorFlow the other Python dependencies are covered with
@@ -19,7 +19,29 @@ pip install numpy
 pip install opencv-python
 ```
 
-[ https://github.com/tensorflow/models].
+
+Next, we need to clone the github.
+click the green "clone or download" button on the https://github.com/tensorflow/models page, download the .zip, and extract it.
+
+
+Once you have the models directory navigate to that directory in your terminal/cmd.exe. 
+
+run dose commaand
+```
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+```
+go to models/research
+```
+setup.py build
+setup.py install
+``
+go to models/research/slim
+Remove bulid
+```
+python setup.py build
+python setup.py install
+```
+
 
 
 
