@@ -1,4 +1,4 @@
-#label_the_images_XML#
+#label_the_images_XML
 
 
 We used our on data, to make some images of small objects
