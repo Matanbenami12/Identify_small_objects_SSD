@@ -13,11 +13,16 @@ We will discuss and compare between SSD_v1 to SSD_v1 with atrous filter
 8.	Detect custom objects in real time for both SSD and SSD with atrous filter  !
 9.	Compare between SSD to SSD with atrous filter 
 
+
+To begin, you're going to want to make sure you have TensorFlow and all of the dependencies. For CPU TensorFlow, you can just do pip install tensorflow, but, of course, the GPU version of TensorFlow is much faster at processing so it is ideal. If you need to install GPU TensorFlow:
+
+
+[ https://github.com/tensorflow/models]
 # From tensorflow/models/
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 
 
-[ https://github.com/tensorflow/models]
+
 
 
 
