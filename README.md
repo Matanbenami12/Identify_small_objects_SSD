@@ -1,4 +1,4 @@
-# Identify_small_objects_SSD
+# Identify_small_objects_SSD(Windows only)
 In this project we will be investigating the difficulty in identifying small objects and its distance with our own data set ,by used SSD algorithm. 
 We will discuss and compare between SSD_v1 to SSD_v1 with atrous filter 
 
@@ -6,6 +6,16 @@ To begin, you're going to want to make sure you have GPU version of TensorFlow a
 If you need to install GPU TensorFlow we recommend to follow this video to install TensorFlow_GPU
 https://www.youtube.com/watch?v=r7-WPbx8VuY&ab_channel=sentdex
 
+
+Ones u install GPU TensorFlow the other Python dependencies are covered with
+
+
+pip install jupyter
+pip install matplotlib
+pip install pillow
+pip install lxml
+pip install numpy
+pip install opencv-python
 
 
 [ https://github.com/tensorflow/models].
