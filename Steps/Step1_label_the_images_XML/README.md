@@ -1,4 +1,4 @@
-#label_the_images_XML
+# Make XML file
 
 
 We used our on data, to make some images of small objects
