@@ -27,16 +27,20 @@ click the green "clone or download" button on the https://github.com/tensorflow/
 Once you have the models directory navigate to that directory in your terminal/cmd.exe. 
 
 run dose commaand
+
 ```
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 ```
 go to models/research
+
 ```
 setup.py build
 setup.py install
-``
+```
+
 go to models/research/slim
 Remove bulid
+
 ```
 python setup.py build
 python setup.py install
