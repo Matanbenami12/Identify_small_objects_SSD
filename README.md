@@ -5,7 +5,7 @@ We will discuss and compare between SSD_v1 to SSD_v1 with atrous filter
 To begin, you are going to make sure you have GPU version of TensorFlow and all of the dependencies 
 If you need to install GPU TensorFlow we recommend to follow this video (How to installTensorFlow_GPU )
 https://www.youtube.com/watch?v=r7-WPbx8VuY&ab_channel=sentdex
-- [ ] Make sure you are install TensorFlow_GPU version 1.14
+- [ ] 1. Make sure you are install TensorFlow_GPU version 1.14  
 
 
 Ones you are install GPU TensorFlow the other Python dependencies are covered with
