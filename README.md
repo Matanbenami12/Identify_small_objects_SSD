@@ -34,21 +34,22 @@ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 go to models/research
 
 ```
-setup.py build
-setup.py install
-```
-
-go to models/research/slim
-Remove bulid
-
-```
 python setup.py build
 python setup.py install
 ```
 
+go to models/research/slim
+Remove bulid
+and run again
+```
+python setup.py build
+python setup.py install
 
+```
 
+ones we finish we are ready to make our oun data set 
 
+in berfiley we will do thata
 
 1.	Collect a few hundred images that contain your object - The bare minimum would be about 100, ideally more like 500+, but, the more images you have, the more tedious step 2 is...
 2.	label the images, ideally with a program. LabelImg. This process is basically drawing boxes around your object in an image. The label program automatically will create an XML file that describes the object in the pictures.
@@ -60,13 +61,13 @@ python setup.py install
 8.	Detect custom objects in real time for both SSD and SSD with atrous filter  !
 9.	Compare between SSD to SSD with atrous filter 
 
+we two
+ first go to steps derctory 
+ 
+ after u finish u are ready to tarinin ou model 
+ go to research/object_detection/lagcy/train.py
 
-To begin, you're going to want to make sure you have TensorFlow and all of the dependencies. For CPU TensorFlow, you can just do pip install tensorflow, but, of course, the GPU version of TensorFlow is much faster at processing so it is ideal. If you need to install GPU TensorFlow:
 
-
-[ https://github.com/tensorflow/models]
-# From tensorflow/models/
-export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 
 
 
