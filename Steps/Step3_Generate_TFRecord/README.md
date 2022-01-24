@@ -12,7 +12,7 @@ You need to change this to your specific class. In our case, we just have ONE cl
 # Class:
 If you had many classes, then you would need to keep building out this if statement.
 
-```
+```ruby
 def class_text_to_int(row_label):
     if row_label == 'Warning':
         return 1
