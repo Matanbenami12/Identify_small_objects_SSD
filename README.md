@@ -7,7 +7,7 @@ If you need to install GPU TensorFlow we recommend to follow this video to insta
 https://www.youtube.com/watch?v=r7-WPbx8VuY&ab_channel=sentdex
 
 
-Ones u install GPU TensorFlow the other Python dependencies are covered with
+Ones you're install GPU TensorFlow the other Python dependencies are covered with
 
 ```
 pip install jupyter
