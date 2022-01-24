@@ -1,4 +1,5 @@
-# Make XML file
+# Label the image to XML file
+
 
 
 We used our on data, to make some images of small objects
