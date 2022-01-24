@@ -1,3 +1,6 @@
+#label_the_images_XML#
+
+
 We used our on data, to make some images of small objects
 We take the marbles for the purpose of illustration:
 Take different types of size / color marbles.
