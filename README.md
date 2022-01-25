@@ -46,7 +46,8 @@ Remove bulid and run again dose commaand from slim directory:
 
 ```
 
-Once we finish we are ready to make our own data set
+Once we finish we are ready to make our own data set.
+
 OKKKKK-so a brief overview of what we needed to do 
 
 
