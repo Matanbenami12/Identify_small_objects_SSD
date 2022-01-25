@@ -31,15 +31,15 @@ Run dose 3 commaands
 ```
 1. export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 ```
-Navigate to models/research and run dose commaand
+###### Navigate to models/research and run dose commaand
 
 ```
 2. python setup.py build
    python setup.py install
 ```
 
-Navigate to models/research/slim
-Remove bulid and run again dose commaand from slim directory:
+###### Navigate to models/research/slim
+Remove ` bulid `and run again dose commaand from slim directory:
 ```
 3. python setup.py build
    python setup.py install
