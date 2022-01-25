@@ -64,10 +64,12 @@ OKKKKK-so a brief overview of what we needed to do
 So let's begin.
 
 We are going to cover how to create the TFRecord files that we need to train an object detection model.
-for tjat go to `steps derctory` and make sure you are create the required TFRecord files from this data.
+
+Go to `Steps derctory` and make sure you are create the required TFRecord files from those steps.
  
- after u finish u are ready to tarinin ou model 
- go to research/object_detection/lagcy/train.py
+ 
+After we make our own TFRecord files we are ready to tarinin our model,
+navigate to # research/object_detection/lagcy/train.py # that directory  in your terminal/cmd.exe
 
 
 
