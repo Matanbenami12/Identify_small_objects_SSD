@@ -46,7 +46,7 @@ Remove ` bulid `and run again dose commaand from slim directory:
 
 ```
 
-Once we finish :tada: we are ready to make our own data set.
+Once we finish 🎉 we are ready to make our own data set.
 
 OKKKKK-so a brief overview of what we needed to do 
 
@@ -61,8 +61,10 @@ OKKKKK-so a brief overview of what we needed to do
 8.	Detect custom objects in real time for both SSD and SSD with atrous filter  !
 9.	Compare between SSD to SSD with atrous filter 
 
-we two
- first go to steps derctory 
+So let's begin.
+
+We are going to cover how to create the TFRecord files that we need to train an object detection model.
+for tjat go to `steps derctory` and make sure you are create the required TFRecord files from this data.
  
  after u finish u are ready to tarinin ou model 
  go to research/object_detection/lagcy/train.py
