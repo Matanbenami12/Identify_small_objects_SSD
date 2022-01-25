@@ -69,7 +69,7 @@ Go to `Steps derctory` and make sure you are create the required TFRecord files 
  
  
 After we make our own TFRecord files we are ready to tarinin our model,
-navigate to *** research/object_detection/lagcy/train.py *** that directory  in your terminal/cmd.exe
+navigate to ***research/object_detection/lagcy/train.py*** that directory  in your terminal/cmd.exe
 
 
 
