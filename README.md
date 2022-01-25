@@ -26,30 +26,29 @@ click the green "clone or download" button on the https://github.com/tensorflow/
 
 Once you have the models directory navigate to that directory in your terminal/cmd.exe. 
 
-run dose commaand
+Run dose 3 commaands
 
 ```
-export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+1. export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 ```
-go to models/research
+Navigate to models/research and run dose commaand
 
 ```
-python setup.py build
-python setup.py install
+2. python setup.py build
+   python setup.py install
 ```
 
-go to models/research/slim
-Remove bulid
-and run again
+Navigate to models/research/slim
+Remove bulid and run again dose commaand from slim directory:
 ```
-python setup.py build
-python setup.py install
+3. python setup.py build
+   python setup.py install
 
 ```
 
-ones we finish we are ready to make our oun data set 
+Once we finish we are ready to make our own data set
+OKKKKK-so a brief overview of what we needed to do 
 
-in berfiley we will do thata
 
 1.	Collect a few hundred images that contain your object - The bare minimum would be about 100, ideally more like 500+, but, the more images you have, the more tedious step 2 is...
 2.	label the images, ideally with a program. LabelImg. This process is basically drawing boxes around your object in an image. The label program automatically will create an XML file that describes the object in the pictures.
