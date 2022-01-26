@@ -110,11 +110,22 @@ item {
   name: 'Warning'
 }
 ```
+
+Like that:
+
+
 ![צילום מסך 2022-01-26 073509](https://user-images.githubusercontent.com/56115477/151109540-f7ff83d6-9a8b-42ca-9c0d-59b393cd45ba.png)
+
+
+
 
 
  All directories **training**, **data**, **images**, **ssd_mobilenet_v1_coco_11** move directly into the C:\tensorflow1\models\research\object_detection directory. 
 
+
+
+
+ Folder should look like:
 
 ![3](https://user-images.githubusercontent.com/56115477/151109553-2dabe134-75b8-434e-bdc1-0c96cc9a0c55.png)
 
