@@ -71,7 +71,7 @@ Go to derctory calld `Steps` and make sure you are create the required TFRecord 
 After we make our own TFRecord files we are ready to tarinin our model,
 
 
-we will train our object detection model to detect our custom object. To do this, we need the Images, matching TFRecords for the training and testing data, and then we need to setup the configuration of the model, then we can train.  
+We will train our object detection model to detect our custom object. To do this, we need the Images, matching TFRecords for the training and testing data, and then we need to setup the configuration of the model, then we can train.  
 That means we need to setup a configuration file.
 
 We can use a pre-trained model, and then use transfer learning to learn a new object,
@@ -80,19 +80,20 @@ TensorFlow has quite a few pre-trained models with checkpoint files available, a
 
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md
 https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs
-I am going to go with SSD mobilenet, using the following checkpoint and configuration file
+
+We are going to go with SSD mobilenet, using the following checkpoint and configuration file
 
 
  https://github.com/tensorflow/models/blob/master/research/object_detection/samples/configs/ssd_mobilenet_v1_pets.config
  http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11
 
-and
+And
 
 https://github.com/tensorflow/models/blob/master/research/object_detection/samples/configs/ssd_mobilenet_v1_pets.config
 http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11
 
 
-### All what we do now is the same for both ssd_v1 and ssd_v1_artous
+###  What we do now is the same for both ssd_v1 and ssd_v1_artous
 
 We make a new directory calld training and  Put the config in , and extract the ssd_mobilenet_v1 in the models directory
 
@@ -109,7 +110,26 @@ item {
   name: 'Warning'
 }
 ```
+
+Like that:
+
+
+![צילום מסך 2022-01-26 073509](https://user-images.githubusercontent.com/56115477/151109540-f7ff83d6-9a8b-42ca-9c0d-59b393cd45ba.png)
+
+
+
+
+
  All directories **training**, **data**, **images**, **ssd_mobilenet_v1_coco_11** move directly into the C:\tensorflow1\models\research\object_detection directory. 
+
+
+
+
+ Folder should look like:
+
+![3](https://user-images.githubusercontent.com/56115477/151109553-2dabe134-75b8-434e-bdc1-0c96cc9a0c55.png)
+
+
 
 At this point, here is what your \object_detection folder should look like:
 And now, the moment of truth! From within models/object_detection:
