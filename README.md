@@ -93,7 +93,7 @@ https://github.com/tensorflow/models/blob/master/research/object_detection/sampl
 http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11
 
 
-### All what we do now is the same for both ssd_v1 and ssd_v1_artous
+###  What we do now is the same for both ssd_v1 and ssd_v1_artous
 
 We make a new directory calld training and  Put the config in , and extract the ssd_mobilenet_v1 in the models directory
 
