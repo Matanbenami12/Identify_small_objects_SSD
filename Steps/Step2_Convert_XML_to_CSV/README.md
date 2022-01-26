@@ -4,7 +4,7 @@ Now we need to convert these XML files to singular CSV files that can be then co
 Step2_Convert_XML_to_CSV) or just grab the files, we'll be using two of them.
 Within the xml_to_csv script, I changed:
 
-```
+```ruby
 def xml_to_csv_utility():
     os.chdir("/kaggle/input/face-data/homo_encrypt/image_data")
     for image_set in ['train_data','test_data']:
@@ -16,7 +16,7 @@ def xml_to_csv_utility():
 ```        
         
 To:
-```
+```ruby
 def main():
     for directory in ['train','test']:
         image_path = os.path.join(os.getcwd(), 'C:/Users/matan/Desktop/object_detection_project/images/{}'.format(directory))
