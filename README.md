@@ -87,7 +87,7 @@ We are going to go with SSD mobilenet, using the following checkpoint and config
  https://github.com/tensorflow/models/blob/master/research/object_detection/samples/configs/ssd_mobilenet_v1_pets.config
  http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11
 
-and
+And
 
 https://github.com/tensorflow/models/blob/master/research/object_detection/samples/configs/ssd_mobilenet_v1_pets.config
 http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11
