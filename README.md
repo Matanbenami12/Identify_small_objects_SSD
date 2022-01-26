@@ -94,9 +94,10 @@ http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11
 
 ### All what we do now is the same for both ssd_v1 and ssd_v1_artous
 
-make a new directory calld training and  Put the config in , and extract the ssd_mobilenet_v1 in the models directory
+We make a new directory calld training and  Put the config in , and extract the ssd_mobilenet_v1 in the models directory
 
-In the configuration file, you need to search for all of the PATH_TO_BE_CONFIGURED points and change them. You may also want to modify batch size. Currently, it is set to 24 in my configuration file. Other models may have different batch sizes. If you get a memory error, you can try to decrease the batch size to get the model to fit in your VRAM. Finally, you also need to change the checkpoint name/path, num_classes to 1, num_examples to 12, and label_map_path: "training/object-detect.pbtxt"
+In the configuration file, you need to search for all of the PATH_TO_BE_CONFIGURED points and change them. You may also want to modify batch size. Currently, it is set to 24 in my configuration file. Other models may have different batch sizes. 
+Finally, you also need to change the checkpoint name/path, num_classes to 1, num_examples to 12, and label_map_path: "training/object-detect.pbtxt"
 
 It's a few edits, so here is my full configuration file:
 
@@ -108,6 +109,9 @@ item {
   name: 'Warning'
 }
 ```
+ All directories **training**, **data**, **images**, **ssd_mobilenet_v1_coco_11** move directly into the C:\tensorflow1\models\research\object_detection directory. 
+
+At this point, here is what your \object_detection folder should look like:
 And now, the moment of truth! From within models/object_detection:
 
 python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config
