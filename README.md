@@ -102,11 +102,12 @@ It's a few edits, so here is my full configuration file:
 
 
 Inside training dir, add object-detection.pbtxt:
-
+``` ruby
 item {
   id: 1
   name: 'Warning'
 }
+```
 And now, the moment of truth! From within models/object_detection:
 
 python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config
