@@ -100,7 +100,6 @@ We make a new directory calld training and  Put the config in , and extract the 
 In the configuration file, you need to search for all of the PATH_TO_BE_CONFIGURED points and change them. You may also want to modify batch size. Currently, it is set to 24 in my configuration file. Other models may have different batch sizes. 
 Finally, you also need to change the checkpoint name/path, num_classes to 1, num_examples to 12, and label_map_path: "training/object-detect.pbtxt"
 
-It's a few edits, so here is my full configuration file:
 
 
 Inside training dir, add object-detection.pbtxt:
@@ -132,9 +131,27 @@ Like that:
 
 
 At this point, here is what your \object_detection folder should look like:
+
+
+
 And now, the moment of truth! From within models/object_detection:
 
-python3 train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1_pets.config
+***Navigate to research/object_detection/legacy/train.py***
+you  need to change the checkpoint name/path ***train_dir and pipeline_config_path***
+
+
+```
+flags.DEFINE_string('train_dir', "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/",
+                    'Directory to save the checkpoints and training summaries.')
+
+flags.DEFINE_string('pipeline_config_path', "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/ssd_mobilenet_v1_pets.config",
+                    'Path to a pipeline_pb2.TrainEvalPipelineConfig config '
+                    'file. If provided, other configs are ignored')
+
+```
+and run in your terminal/cmd.exe this command
+python train.py
+
 
 Barring errors, you should see output like:
 
@@ -157,7 +174,6 @@ My total loss graph:
 
 
 
-***Navigate to research/object_detection/lagcy/train.py*** that file in your terminal/cmd.exe
 
 
 
@@ -167,27 +183,7 @@ My total loss graph:
 
 
 
-I am doing this tutorial on a fresh machine to be certain I don't miss any steps, so I will be fully setting up the Object API. If you've already cloned and setup, feel free to skip the initial steps and pick back up on the setup.py part!
 
-First, I am cloning the repository to my desktop:
-
-git clone https://github.com/tensorflow/models.git
-
-Then, following the installation instructions:
-
-sudo apt-get install protobuf-compiler python-pil python-lxml
-sudo pip install jupyter
-sudo pip install matplotlib
-And then:
-
-# From tensorflow/models/
-protoc object_detection/protos/*.proto --python_out=.
-If you get an error on the protoc command on Ubuntu, check the version you are running with protoc --version, if it's not the latest version, you might want to update. As of my writing of this, we're using 3.4.0. In order to update or get protoc, head to the protoc releases page. Download the python version, extract, navigate into the directory and then do:
-
-sudo ./configure
-sudo make check
-sudo make install
-After that, try the protoc command again (again, make sure you are issuing this from the models dir).
 
 
 
@@ -199,16 +195,4 @@ python train.py --logtostderr --train_dir=C:/Users/matan/Desktop/tensorflow1/mod
 
 
 
-if its say no named objet_detction
-go to C:/Users/avi/Desktop/tensorflow1/models/research
-and put:
-setup.py build
-setup.py install
 
-
-if it sat no named nets 
-go to C:/Users/avi/Desktop/tensorflow1/models/research/slim
-remove bulid
-and put:
-python setup.py build
-python setup.py install
