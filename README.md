@@ -162,7 +162,7 @@ Barring errors, you should see output like:
 
 Your steps start at 1 and the loss will be much higher. You want to shoot for a loss of about ~1 on average (or lower). We wouldn't stop training until you are for sure under 2. You can check how the model is doing via TensorBoard. Your models/research/object_detection/training directory will have new event files that can be viewed via TensorBoard.
 
-From models/object_detection, via terminal, you start TensorBoard with:
+From models/research//object_detection, via terminal, you open cmd.exe and start TensorBoard with:
 
 tensorboard --logdir="C:/Users/matan/Desktop/tensorflow1/models/research/object_detection/training"  --host localhost 
 
