@@ -203,8 +203,9 @@ NUM_CLASSES = 1
 
 ```
 
-
-
+We will do all again with SSD artus
+and chack what is better
+Now let's the diffrent
 
 
 
