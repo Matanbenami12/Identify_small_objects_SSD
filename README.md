@@ -155,41 +155,53 @@ python train.py
 
 Barring errors, you should see output like:
 
-INFO:tensorflow:global step 11788: loss = 0.6717 (0.398 sec/step)
-INFO:tensorflow:global step 11789: loss = 0.5310 (0.436 sec/step)
-INFO:tensorflow:global step 11790: loss = 0.6614 (0.405 sec/step)
-INFO:tensorflow:global step 11791: loss = 0.7758 (0.460 sec/step)
-INFO:tensorflow:global step 11792: loss = 0.7164 (0.378 sec/step)
-INFO:tensorflow:global step 11793: loss = 0.8096 (0.393 sec/step)
-Your steps start at 1 and the loss will be much higher. Depending on your GPU and how much training data you have, this process will take varying amounts of time. On something like a 1080ti, it should take only about an hour or so. If you have a lot of training data, it might take much longer. You want to shoot for a loss of about ~1 on average (or lower). I wouldn't stop training until you are for sure under 2. You can check how the model is doing via TensorBoard. Your models/object_detection/training directory will have new event files that can be viewed via TensorBoard.
+
+![step](https://user-images.githubusercontent.com/56115477/151669704-d6616676-ee09-43f6-aaaa-954cd286be5f.png)
+
+
+
+Your steps start at 1 and the loss will be much higher. You want to shoot for a loss of about ~1 on average (or lower). We wouldn't stop training until you are for sure under 2. You can check how the model is doing via TensorBoard. Your models/research/object_detection/training directory will have new event files that can be viewed via TensorBoard.
 
 From models/object_detection, via terminal, you start TensorBoard with:
 
-tensorboard --logdir='training'
+tensorboard --logdir="C:/Users/matan/Desktop/tensorflow1/models/research/object_detection/training"  --host localhost 
 
 This runs on 127.0.0.1:6006 (visit in your browser)
 
-My total loss graph:
+
+Now,we're going to export the graph and then test the model.
+
+In the models/research/object_detection/training" directory, there is a script for us: export_inference_graph.py
+
+To run this, you just need to pass in your checkpoint and your pipeline config, then wherever you want the inference graph to be placed. 
+
+Your checkpoint files should be in the training directory. Just look for the one with the largest step (the largest number after the dash), and that's the one you want to use. Next, make sure the pipeline_config_path is set to whatever config file you chose, and then finally choose the name for the output directory,We went with Warning_graph
+
+Run the command from models/research/object_detection
+```
+python export_inference_graph.py  --input_type image_tensor --pipeline_config_path C:/Users/matan/Desktop/ object_detection_project/tensorflow1/models/research/object_detection/training/ssd_mobilenet_v1_pets.config --trained_checkpoint_prefix C:/Users/matan/Desktop/ object_detection_project/tensorflow1/models/research/object_detection/training/ model.ckpt-80638--output_directory Warning_graph
+```
+
+Now, you should have a new directory, in our case,  is Warning_graph, inside it, We have new checkpoint data, a saved_model directory, and, most importantly, the forzen_inference_graph.pb file.
+
+Now, we're just going to run the sample obs.py
+
+
+# What model to download.
+MODEL_NAME = 'C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/Warning_graph';
+
+# Path to frozen detection graph. This is the actual model that is used for the object detection.
+PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
+
+# List of the strings that is used to add correct label for each box.
+PATH_TO_LABELS = os.path.join('C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training', 'object-detection.pbtxt')
+
+NUM_CLASSES = 1
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-python train.py --logtostderr --train_dir=C:/Users/matan/Desktop/tensorflow1/models/research/object_detection/training/ --pipeline_config_path=C:/Users/matan/Desktop/tensorflow1/models/research/object_detection/training/ssd_mobilenet_v1_pets.config
 
 
 
