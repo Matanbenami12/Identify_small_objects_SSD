@@ -187,18 +187,21 @@ Now, you should have a new directory, in our case,  is Warning_graph, inside it,
 Now, we're just going to run the sample obs.py
 
 
-# What model to download.
+### What model to download.
+```ruby
 MODEL_NAME = 'C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/Warning_graph';
-
-# Path to frozen detection graph. This is the actual model that is used for the object detection.
+```
+### Path to frozen detection graph. This is the actual model that is used for the object detection.
+```ruby
 PATH_TO_CKPT = MODEL_NAME + '/frozen_inference_graph.pb'
-
-# List of the strings that is used to add correct label for each box.
+```
+### List of the strings that is used to add correct label for each box.
+```ruby
 PATH_TO_LABELS = os.path.join('C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training', 'object-detection.pbtxt')
 
 NUM_CLASSES = 1
 
-
+```
 
 
 
