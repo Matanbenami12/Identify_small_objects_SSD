@@ -1,6 +1,6 @@
 
 Once you've done all of this,we're going to cover how we can create the required TFRecord files from this data.
-Now, just grab the files generate_tfrecord.py and the utils directory. The only modification that you will need to make here is in the class_text_to_int function and , patch of csv_input,Path to output TFRecord ,Path to images .
+Now, just grab the files generate_tfrecord.py from here https://blog.roboflow.com/create-tfrecord/ and the utils directory. The only modification that you will need to make here is in the class_text_to_int function and , patch of csv_input,Path to output TFRecord ,Path to images .
 You need to change this to your specific class. In our case, we just have ONE class and Path.
 
 # Path:
