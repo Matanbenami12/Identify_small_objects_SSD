@@ -1,6 +1,0 @@
-model_checkpoint_path: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/model.ckpt-376916"
-all_model_checkpoint_paths: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/model.ckpt-373256"
-all_model_checkpoint_paths: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/model.ckpt-374445"
-all_model_checkpoint_paths: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/model.ckpt-375636"
-all_model_checkpoint_paths: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/model.ckpt-376256"
-all_model_checkpoint_paths: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/model.ckpt-376916"
