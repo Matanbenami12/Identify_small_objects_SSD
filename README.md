@@ -1,6 +1,6 @@
 # Identify_small_objects_SSD(Windows only)
 In this project we will be investigating the difficulty in identifying small objects and its distance with our own data set ,by used SSD algorithm. 
-We will discuss and compare between SSD_v1 to SSD_v1 with atrous filter 
+We will discuss and compare between SSD_mobilenet to SSD_resnet 
 
 To begin, you are going to make sure you have GPU version of TensorFlow(.1) and all of the dependencies 
 If you need to install GPU TensorFlow we recommend to follow this video (How to installTensorFlow_GPU )
@@ -58,8 +58,8 @@ OKKKKK-so a brief overview of what we needed to do
 5.	Setup a .config file for the model of choice 
 6.	Train
 7.	Export graph from new trained model
-8.	Detect custom objects in real time for both SSD and SSD with atrous filter  !
-9.	Compare between SSD to SSD with atrous filter 
+8.	Detect custom objects in real time for both SSD_mobilenet and SSD_resnet  !
+9.	Compare between SSD_mobilenet to SSD_resnet 
 
 So let's begin.
 
@@ -87,13 +87,10 @@ We are going to go with SSD mobilenet, using the following checkpoint and config
  https://github.com/tensorflow/models/blob/master/research/object_detection/samples/configs/ssd_mobilenet_v1_pets.config
  http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11
 
-And
-
-https://github.com/tensorflow/models/blob/master/research/object_detection/samples/configs/ssd_mobilenet_v1_pets.config
-http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11
 
 
-###  What we do now is the same for both ssd_v1 and ssd_v1_artous
+
+###  What we do now is the same for both SSD_mobilenet and SSD_resnet 
 
 We make a new directory calld training and  Put the config in , and extract the ssd_mobilenet_v1 in the models directory
 
@@ -203,7 +200,7 @@ NUM_CLASSES = 1
 
 ```
 
-We will do all again with SSD artus
+We will do all again with SSD resnet
 and chack what is better
 Now let's the diffrent
 
