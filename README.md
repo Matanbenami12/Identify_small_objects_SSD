@@ -203,9 +203,11 @@ We will do all again with SSD resnet
 and compare between SSD_mobilenet to SSD_resnet 
  
 Now let us see the diffrent
+i84p
+Model name	Speed (ms)	COCO mAP1	Outputs
 
-
-
+ssd_mobilenet_v1_coco	30	21	Boxes
+ssd_resnet_101_fpn_oidv4	237	38	Boxes
 
 
 
