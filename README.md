@@ -3,8 +3,8 @@ In this project we will be investigating the difficulty in identifying small obj
 We will discuss and compare between SSD_mobilenet to SSD_resnet 
 
 To begin, you are going to make sure you have GPU version of TensorFlow(.1) and all of the dependencies 
-If you need to install GPU TensorFlow we recommend to follow this video (How to installTensorFlow_GPU )
-https://www.youtube.com/watch?v=r7-WPbx8VuY&ab_channel=sentdex
+If you need to install GPU TensorFlow we recommend to follow this video How to [installTensorFlow_GPU](https://www.youtube.com/watch?v=r7-WPbx8VuY&ab_channel=sentdex
+) 
 - [ ] 1. Make sure you are install TensorFlow_GPU version 1.14  and you are using python version 3.6 .
 
 
