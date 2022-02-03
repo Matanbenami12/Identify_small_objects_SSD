@@ -94,7 +94,7 @@ We are going to go with SSD mobilenet, using the following checkpoint
 We make a new directory calld training and  Put the config in , and extract the ssd_mobilenet_v1 in the models directory
 
 In the configuration file, you need to search for all of the PATH_TO_BE_CONFIGURED points and change them. You may also want to modify batch size. Currently, it is set to 24 in my configuration file. Other models may have different batch sizes. 
-Finally, you also need to change the checkpoint name/path, num_classes to 1, num_examples to 12, and label_map_path: "training/object-detect.pbtxt"
+Finally, you also need to change the checkpoint name/path, num_classes to 1, num_examples to 12, and label_map_path: "***Your_PATH***/models/research/object_detection/training/object-detect.pbtxt"
 
 
 
@@ -115,7 +115,7 @@ Like that:
 
 
 
- All directories **training**, **data**, **images**, **ssd_mobilenet_v1_coco_11** move directly into the C:\tensorflow1\models\research\object_detection directory. 
+ All directories **training**, **data**, **images**, **ssd_mobilenet_v1_coco_11** move directly into the ***Your_PATH***\models\research\object_detection directory. 
 
 
 
