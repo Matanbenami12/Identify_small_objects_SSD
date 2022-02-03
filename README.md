@@ -121,20 +121,19 @@ Like that:
 
 
 
- Folder should look like:
+ At this point, here is what your \object_detection folder should look like:
 
 ![3](https://user-images.githubusercontent.com/56115477/151109553-2dabe134-75b8-434e-bdc1-0c96cc9a0c55.png)
 
 
 
-At this point, here is what your \object_detection folder should look like:
 
 
 
-And now, the moment of truth! From within models/object_detection:
 
 ***Navigate to research/object_detection/legacy/train.py***
-you  need to change the checkpoint name/path ***train_dir and pipeline_config_path***
+
+You need to change the  ***train_dir path and pipeline_config_path*** like:
 
 
 ```
@@ -146,7 +145,7 @@ flags.DEFINE_string('pipeline_config_path', "C:/Users/matan/Desktop/object_detec
                     'file. If provided, other configs are ignored')
 
 ```
-and run in your terminal/cmd.exe this command
+And now, the moment of truth! run in your terminal/cmd.exe this command
 python train.py
 
 
@@ -157,7 +156,7 @@ Barring errors, you should see output like:
 
 
 
-Your steps start at 1 and the loss will be much higher. You want to shoot for a loss of about ~1 on average (or lower). We wouldn't stop training until you are for sure under 2. You can check how the model is doing via TensorBoard. Your models/research/object_detection/training directory will have new event files that can be viewed via TensorBoard.
+Your steps start at 1 and the loss will be much higher. You want to shoot for a loss of about ~1 on average (or lower). We wouldn't stop training until you are for sure under 1. You can check how the model is doing via TensorBoard. Your models/research/object_detection/training directory will have new event files that can be viewed via TensorBoard.
 
 From models/research//object_detection, via terminal, you open cmd.exe and start TensorBoard with:
 
@@ -201,8 +200,9 @@ NUM_CLASSES = 1
 ```
 
 We will do all again with SSD resnet
-and chack what is better
-Now let's the diffrent
+and compare between SSD_mobilenet to SSD_resnet 
+ 
+Now let us see the diffrent
 
 
 
