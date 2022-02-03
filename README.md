@@ -115,7 +115,8 @@ Like that:
 
 
 
- All directories **training**, **data**, **images**, **ssd_mobilenet_v1_coco_11** move directly into the ***Your_PATH***\models\research\object_detection directory. 
+ All directories **training**, **data**, **images**, **ssd_mobilenet_v1_coco_11** 
+ move directly into the ***Your_PATH***\models\research\object_detection directory. 
 
 
 
