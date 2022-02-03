@@ -76,16 +76,14 @@ That means we need to setup a configuration file.
 
 We can use a pre-trained model, and then use transfer learning to learn a new object,
 
-TensorFlow has quite a few pre-trained models with checkpoint files available, along with configuration filesfrom here
+TensorFlow has quite a few pre-trained models with checkpoint files available, along with configuration filesfrom [here](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs
+)
 
-https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md
-https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs
+We are going to go with SSD mobilenet, using the following [checkpoint]( http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11
+) and [configuration]( https://github.com/tensorflow/models/blob/master/research/object_detection/samples/configs/ssd_mobilenet_v1_pets.config
+) file
 
-We are going to go with SSD mobilenet, using the following checkpoint and configuration file
 
-
- https://github.com/tensorflow/models/blob/master/research/object_detection/samples/configs/ssd_mobilenet_v1_pets.config
- http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11
 
 
 
