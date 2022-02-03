@@ -5,7 +5,7 @@ We will discuss and compare between SSD_mobilenet to SSD_resnet
 To begin, you are going to make sure you have GPU version of TensorFlow(.1) and all of the dependencies 
 If you need to install GPU TensorFlow we recommend to follow this video (How to installTensorFlow_GPU )
 https://www.youtube.com/watch?v=r7-WPbx8VuY&ab_channel=sentdex
-- [ ] 1. Make sure you are install TensorFlow_GPU version 1.14  and you are using python version 3.7  .
+- [ ] 1. Make sure you are install TensorFlow_GPU version 1.14  and you are using python version 3.6 .
 
 
 Ones you are install GPU TensorFlow the other Python dependencies are covered with
@@ -65,7 +65,7 @@ So let's begin.
 
 We are going to cover how to create the TFRecord files that we need to train an object detection model.
 
-Go to derctory calld `Steps` and make sure you are create the required TFRecord files from those steps.
+Go to derctory calld [`Steps`](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Steps) and make sure you are create the required TFRecord files from those steps.
  
  
 After we make our own TFRecord files we are ready to tarinin our model,
