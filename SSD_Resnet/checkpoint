@@ -1,0 +1,6 @@
+model_checkpoint_path: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/ssd_resnet/model.ckpt-13302"
+all_model_checkpoint_paths: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/ssd_resnet/model.ckpt-12910"
+all_model_checkpoint_paths: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/ssd_resnet/model.ckpt-13009"
+all_model_checkpoint_paths: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/ssd_resnet/model.ckpt-13107"
+all_model_checkpoint_paths: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/ssd_resnet/model.ckpt-13205"
+all_model_checkpoint_paths: "C:/Users/matan/Desktop/object_detection_project/tensorflow1/models/research/object_detection/training/ssd_resnet/model.ckpt-13302"
