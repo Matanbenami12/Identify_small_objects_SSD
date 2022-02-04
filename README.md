@@ -227,5 +227,4 @@ we try  a real time image processing and found they distance to how to found a d
 | Model name     | Traning time  |
 | -------------  | ------------- |
 | SSD_mobilenet  |     52 hours  |
-| -------------  | ------------- |
 | SSD_resnet     |     25 hours  |
