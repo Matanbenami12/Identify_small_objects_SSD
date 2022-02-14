@@ -219,7 +219,12 @@ ssd_resnet_101_fpn_oidv4	237	38	Boxes
 
 
 
-we try  a real time image processing and found they distance to how to found a distance in a real time image processinggo here 
+we try  a real time image processing and found they distance to how to found a distance in a real time image processinggo [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Distance%20from%20camera) 
 
 
 
+
+| Model name     | Traning time  |
+| -------------  | ------------- |
+| SSD_mobilenet  |     52 hours  |
+| SSD_resnet     |     25 hours  |
