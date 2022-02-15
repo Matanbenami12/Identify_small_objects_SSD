@@ -233,7 +233,6 @@ we try  a real time image processing and found they distance to how to found a d
 |   Identify_small_objects        | 
 |-------------------------------- |            
 |  SSD_mobilenet | TOP 1 |  TOP 5 |
-    -----------    -----   ------
 |     0.5 m      |       |        |
 |      1 m       |       |        |
 |     1.5 m      |       |        |
