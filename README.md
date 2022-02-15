@@ -225,10 +225,10 @@ we try  a real time image processing and found they distance to how to found a d
 
 
 
-| Model name     | Traning time  | real time Speed (ms) |         
-| -------------  | ------------- | -------------------- |
-| SSD_mobilenet  |     52 hours  |           30         |
-| SSD_resnet     |     25 hours  |           237        |
+| Model name     | Traning time  | real time Speed (ms) | real time Identify 0.5m|  real time Identify 1m| real time Identify 1.5m|   
+| -------------  | ------------- | -------------------- | --------------------   | --------------------  | --------------------   |
+| SSD_mobilenet  |     52 hours  |           30         |                        |                       |                        |
+| SSD_resnet     |     25 hours  |           237        |                        |                       |                        |
 
 
 
