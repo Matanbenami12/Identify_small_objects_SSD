@@ -13,14 +13,22 @@ The third beam A, Q, A 'emerges from the light source, passes through the neares
 From the points' A and A I lower the vertical to the optical axis so that the verticals' B 'A and AB are obtained
 According to the lens settings we will mark:
  u = AP = BO  (horizontal distance of the light source from the lens)
+ 
 Q = v 'A = O' B - (the horizontal distance of the figure from the lens)
+
   F_1 O = F_2 O = f - (focal length)
+  
    - AB = PO = H_O (the vertical distance of the light source from the optical axis)
+   - 
  = H_i 'B' A = QO - (The vertical distance of the figure from the optical axis)
   
-From geometry of figure above, right angle ΔABO and ΔA’B’O are similar.  
-  
-  
+From geometry of figure above, triangles ΔABF1 and ΔOQF1 are similar. 
+
+ (u-f)/f=H_o/H_i 
+
+Triangles ΔPOF2 and ΔA'B'F2 are also similar 
+
+  f/(v-f)=H_o/H_i    
   
   
   
