@@ -204,25 +204,14 @@ We will do all again with SSD resnet
 and compare between SSD_mobilenet to SSD_resnet 
  
  
-First SSD_mobilenet take us about 2 dayes to get under 1 and SSD_resnet take us 1 day 
-
-Now let us see the diffrent
-i84p
-Model name	Speed (ms)	COCO mAP1	Outputs
-
-ssd_mobilenet_v1_coco	30	21	Boxes
-ssd_resnet_101_fpn_oidv4	237	21	Boxes
-
-
-
-
-
 
 
 
 we try  a real time image processing and found they distance to how to found a distance in a real time image processinggo [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Distance%20from%20camera) 
 
+Now let us see the diffrent
 
+Real time identify:
 
 
 | Model name     | Traning time  | real time Speed (ms) | real time Identify 0.5m|  real time Identify 1m| real time Identify 1.5m|   
@@ -232,6 +221,10 @@ we try  a real time image processing and found they distance to how to found a d
 
 
 
+
+Images identify:
+  
+  
 |   Identify_small_objects|    |   | 
 |--|--|--|            
 |  SSD_mobilenet | TOP 1 |  TOP 5 |  
