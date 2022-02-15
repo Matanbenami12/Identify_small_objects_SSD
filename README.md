@@ -211,7 +211,7 @@ i84p
 Model name	Speed (ms)	COCO mAP1	Outputs
 
 ssd_mobilenet_v1_coco	30	21	Boxes
-ssd_resnet_101_fpn_oidv4	237	38	Boxes
+ssd_resnet_101_fpn_oidv4	237	21	Boxes
 
 
 
@@ -225,7 +225,19 @@ we try  a real time image processing and found they distance to how to found a d
 
 
 
-| Model name     | Traning time  |
-| -------------  | ------------- |
-| SSD_mobilenet  |     52 hours  |
-| SSD_resnet     |     25 hours  |
+| Model name     | Traning time  | real time Speed (ms) |         
+| -------------  | ------------- | -------------------- |
+| SSD_mobilenet  |     52 hours  |           30         |
+| SSD_resnet     |     25 hours  |           237        |
+
+|   Identify_small_objects        | 
+|-------------------------------- |            
+|  SSD_mobilenet | TOP 1 |  TOP 5 |
+    -----------    -----   ------
+|     0.5 m      |       |        |
+|      1 m       |       |        |
+|     1.5 m      |       |        |
+|   SSD_resnet   | TOP 1 |  TOP 5 |              
+|     0.5 m      |       |        |
+|      1 m       |       |        |
+|     1.5 m      |       |        | 
