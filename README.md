@@ -230,6 +230,8 @@ we try  a real time image processing and found they distance to how to found a d
 | SSD_mobilenet  |     52 hours  |           30         |
 | SSD_resnet     |     25 hours  |           237        |
 
+
+
 |   Identify_small_objects        | 
 |-------------------------------- |            
 |  SSD_mobilenet | TOP 1 |  TOP 5 |
