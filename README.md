@@ -164,7 +164,7 @@ tensorboard --logdir="C:/Users/matan/Desktop/tensorflow1/models/research/object_
 
 This runs on 127.0.0.1:6006 (visit in your browser)
 
-
+The tensorboard result is [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/TensorBoard_result)
 Now,we're going to export the graph and then test the model.
 
 In the models/research/object_detection/training" directory, there is a script for us: export_inference_graph.py
