@@ -34,7 +34,8 @@ Image distance (OB’) = +v
 
 Focal length (OF1 = OF2) = +f
 
-From geometry of figure above, right angle ΔABO and ΔA’B’O are similar.
+From geometry of figure above,  triangles  〖ABF〗_1  ו 〖OQF〗_1 are similar. 
+
  
 
   
