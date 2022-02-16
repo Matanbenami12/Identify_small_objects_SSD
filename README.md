@@ -204,10 +204,80 @@ We will do all again with SSD resnet
 and compare between SSD_mobilenet to SSD_resnet 
  
  
+object detection in real-time
 
+ Once we identify small objects in image, we decides to move forward and identify object and  distance from camera in real-time
+ It's a few edits 
+ So, here, we can iterate through the boxes for further analysis. Boxes are an array, inside of an array, so, to iterate through them, we need to do:
+ 
+       for i,b in enumerate(boxes[0]):
+Now, for the "too close" tracking, we're interested in some specific classes. One could argue that *any* object that is too close is something we might want to avoid. The deal is, however, that, to determine distance, you need to know the object's size before-hand.
 
+For example, a car that is too close, being a few feet across if it's driving in front of you, will be much larger than a tree trunk, even if they're the exact distance from you. For this reason, we're only going to lump in cars, buses, and trucks for this loop. You can detect other smaller or larger objects in other loops if you like.
 
-we try  a real time image processing and found they distance to how to found a distance in a real time image processinggo [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Distance%20from%20camera) 
+      for i,b in enumerate(boxes[0]):
+        #                 car                    bus                  truck
+        if classes[0][i] == 3 or classes[0][i] == 6 or classes[0][i] == 8:
+Next, we want to be fairly certain these are *actually* vehicles. For example, in the vis_util.visualize_boxes_and_labels_on_image_array function, the default parameter for drawing boxes is a score of 0.5. I discovered this by simply viewing the code to see what all of the options were. We can use the same score of 0.5 or more logic. It's important to note that the object detector actually detects quite a few more objects, you just might not have been aware since only the scores of 0.5 or greater were being drawn.
+
+      for i,b in enumerate(boxes[0]):
+        #                 car                    bus                  truck
+        if classes[0][i] == 3 or classes[0][i] == 6 or classes[0][i] == 8:
+          if scores[0][i] >= 0.5:
+Now, we want to measure the width of the detected object. We can do this by asking how many pixels-wide the object is. We can do this with:
+
+apx_distance = round(((1 - (boxes[0][i][3] - boxes[0][i][1]))),1)
+For some added granularity, I am going to add:
+
+apx_distance = round(((1 - (boxes[0][i][3] - boxes[0][i][1]))**4),1)
+You can play with this calculation more if you like, but I am going to move on. For debugging purposes, I would like to display this number on screen. To do this, I am going to display at the following coordinates:
+
+            mid_x = (boxes[0][i][1]+boxes[0][i][3])/2
+            mid_y = (boxes[0][i][0]+boxes[0][i][2])/2
+Basically, this displays at left of the detected object, in the middle vertically.
+
+      for i,b in enumerate(boxes[0]):
+        #                 car                    bus                  truck
+        if classes[0][i] == 3 or classes[0][i] == 6 or classes[0][i] == 8:
+          if scores[0][i] >= 0.5:
+            mid_x = (boxes[0][i][1]+boxes[0][i][3])/2
+            mid_y = (boxes[0][i][0]+boxes[0][i][2])/2
+            apx_distance = round(((1 - (boxes[0][i][3] - boxes[0][i][1]))**4),1)
+We can write this to the screen with:
+
+            cv2.putText(image_np, '{}'.format(apx_distance), (int(mid_x*800),int(mid_y*450)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255,255,255), 2)
+If that distance is less than 0.5, then I am going to say this is too close for an object ~the width of a car, so we want to display a warning:
+
+            if apx_distance <=0.5:
+              if mid_x > 0.3 and mid_x < 0.7:
+                cv2.putText(image_np, 'WARNING!!!', (50,50), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0,0,255), 3)
+Also note: if mid_x > 0.3 and mid_x < 0.7:. This code just looks to see that, even if the object is close, it might be far enough to the side that it's not a likely collision issue. Obviously, to do this right, you would probably want to track object history and trajectory. For example, if you're going through an intersection, and there's a car coming across, a reasonable person would know that, despite the car not being in front, that vehicle is a collision risk.
+
+Full code up to this point:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ We are going to cover how to found distance from camera to object [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Distance%20from%20camera) 
+ using  OpenCV package
+ 
+ 1. we will found distance from camera to object using  OpenCV package
+ In order to determine the distance from our camera to a known object   
 
 Now let us see the diffrent
 
