@@ -205,10 +205,10 @@ The resulting output from here
  
 
 
-Once we identify small objects in image, we decides to move forward and identify object and object distance from camera in real-time
+Once we identify small objects in image, we decides to move forward and identify object in real-time and Find is distance from camera
 for this run obj_video.py 
 
-first we need identify object in real-time,  It's a few edits to our code so we explian :
+first we need identify object in real-time,  It's a few edits to our code so we will explain :
 here, we can iterate through the boxes for further analysis. Boxes are an array, inside of an array, so, to iterate through them, we need to do:
 
        for i,b in enumerate(boxes[0]):
@@ -228,14 +228,17 @@ Next, we want to be fairly certain these are *actually* Warning. For example, in
         #                  Warning       
         if output_dict['detection_classes'][i] == 1:
           if output_dict['detection_scores'][i] > 0.8::
-Now, we want to measure the width of the detected object. We can do this by asking how many pixels-wide the object is. We can do this with:
-lenght_warning_image=(output_dict['detection_boxes'][i][3]-output_dict['detection_boxes'][i][1])*800
 
-ש
-now We are going to cover how to found distance from camera to object [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Distance%20from%20camera) 
+
+
+Now, we want to to Find object distance from camera for that we need to know the width for real object and the width for image object and focal length of our camera
+
+We are going to cover how to found distance from camera to object [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Distance%20from%20camera) 
 using  OpenCV package  
-
-
+   
+ measure the width of the detected object. We can do this by asking how many pixels-wide the object is. We can do this with:
+lenght_warning_image=(output_dict['detection_boxes'][i][3]-output_dict['detection_boxes'][i][1])*800  
+   
  apx_distance = round(lenght_warning/(((lenght_warning_image)/focal_length)), 2)
  For debugging purposes, I would like to display this number on screen. To do this, I am going to display at the following coordinates:
 
