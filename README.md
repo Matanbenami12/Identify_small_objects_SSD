@@ -232,15 +232,23 @@ Next, we want to be fairly certain these are *actually* Warning. For example, in
 
 
 
-Now, we want to to Find object distance from camera for that we need to know the width for real object and the width for image object and focal length of our camera
+Now, we want to to Find object distance from camera for that we need to know the width for image object and the width for real object and focal length of our camera
 
-We are going to cover how to found distance from camera to object [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Distance%20from%20camera) 
+
+first To measure the width of the image detected object. We can do this by asking how many pixels-wide the object is. We can do this with:
+ 
+lenght_warning_image=(output_dict['detection_boxes'][i][3]-output_dict['detection_boxes'][i][1])*800  
+
+Then We are going to cover how to found distance from camera to object [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Distance%20from%20camera) 
 using  OpenCV package  
    
- measure the width of the detected object. We can do this by asking how many pixels-wide the object is. We can do this with:
-lenght_warning_image=(output_dict['detection_boxes'][i][3]-output_dict['detection_boxes'][i][1])*800  
-   
+
+ 
+ After we cover how to found distance from camera our real object distance is :
+ 
  apx_distance = round(lenght_warning/(((lenght_warning_image)/focal_length)), 2)
+ 
+ 
  For debugging purposes, I would like to display this number on screen. To do this, I am going to display at the following coordinates:
 
     mid_x = (output_dict['detection_boxes'][i][3]+output_dict['detection_boxes'][i][1]) / 2
