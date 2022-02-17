@@ -257,6 +257,7 @@ We can write this to the screen with:
 The resulting output from here, for example:
  
  
+![image](https://user-images.githubusercontent.com/56115477/154444153-f46f650a-568f-4d2e-acba-29173dee111b.png)
  
  
  
