@@ -285,10 +285,10 @@ Now let us see the diffrent
 Real time identify:
 
 
-| Model name     | Traning time  | real time Speed (ms) | real time Identify 0.5m|  real time Identify 1m| real time Identify 1.5m|   
-| -------------  | ------------- | -------------------- | --------------------   | --------------------  | --------------------   |
-| SSD_mobilenet  |     52 hours  |           30         |                        |                       |                        |
-| SSD_resnet     |     25 hours  |           237        |                        |                       |                        |
+| Model name     | Traning time  | real time Speed (ms) | real time Identify 0.5m|  real time Identify 1m|   
+| -------------  | ------------- | -------------------- | --------------------   | --------------------  |
+| SSD_mobilenet  |     52 hours  |           30         |                        |                       |           
+| SSD_resnet     |     25 hours  |           237        |                        |                       |             
 
 
 
