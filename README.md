@@ -205,11 +205,12 @@ The resulting output from here
  
 
 
-Once we identify small objects in image, we decides to move forward and identify object in real-time and Find is distance from camera
-for this run obj_video.py 
+Once we identify small objects in image, we decides to move forward and identify object in real-time and Find the object distance from camera:
 
-first we need identify object in real-time,  It's a few edits to our code so we will explain :
-here, we can iterate through the boxes for further analysis. Boxes are an array, inside of an array, so, to iterate through them, we need to do:
+for identify object in real-time u need to run obj_video.py It's a few edits to our code so we will explain :
+
+
+first we need identify object in real-time here, we can iterate through the boxes for further analysis. Boxes are an array, inside of an array, so, to iterate through them, we need to do:
 
        for i,b in enumerate(boxes[0]):
        
