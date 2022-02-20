@@ -76,11 +76,4 @@ The triangle similarity goes something like this: Let’s say we have a marker o
 
 
 
-This math is inline $`a^2+b^2=c^2`$.
-
-This is on a separate line
-
-```math
-a^2+b^2=c^2
-```
-
+![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})
