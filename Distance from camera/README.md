@@ -30,6 +30,8 @@ From geometry of figure above, triangles ΔABF1 and ΔOQF1 are similar.
  
 \frac{(u-f)}{/f} = \frac{(H_o)}{/H_i}
 
+$\pi$
+
 Triangles ΔPOF2 and ΔA'B'F2 are also similar 
 
   f/(v-f)=H_o/H_i    
