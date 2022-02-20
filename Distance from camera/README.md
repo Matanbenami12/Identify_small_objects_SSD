@@ -67,6 +67,7 @@ The triangle similarity goes something like this: Let’s say we have a marker o
 
 
 
+![image](https://user-images.githubusercontent.com/56115477/154845117-cbdf00a6-925d-4265-a3ec-b6da45ac729e.png)
 
 
 
@@ -75,5 +76,11 @@ The triangle similarity goes something like this: Let’s say we have a marker o
 
 
 
+This math is inline $`a^2+b^2=c^2`$.
 
+This is on a separate line
+
+```math
+a^2+b^2=c^2
+```
 
