@@ -25,6 +25,7 @@ Q = v 'A = O' B - (the horizontal distance of the figure from the lens)
 From geometry of figure above, triangles ΔABF1 and ΔOQF1 are similar. 
 
  (u-f)/f=H_o/H_i 
+ $\frac{(u-f)}{f}$ =  $\frac{H_o}{H_i}$
 \frac{(u-f)}{/f} = \frac{(H_o)}{/H_i}
 Triangles ΔPOF2 and ΔA'B'F2 are also similar 
 
