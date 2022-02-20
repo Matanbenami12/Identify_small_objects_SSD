@@ -286,8 +286,7 @@ The resulting output from here, for example:
  
 
  
- 1. we will found distance from camera to object using  OpenCV package
- In order to determine the distance from our camera to a known object   
+   
 
 Now let us see the diffrent
 
