@@ -10,14 +10,12 @@ Source light A.
 F_1 and F_2 are the focal points of the lens. 
 
 The image formed by a thin lens can be located by drawing three Kepler rays: (1) a ray  A,O,A' which passes through the center of the lens is unchanged because the lens faces are parallel here and the lens is assumed to be thin. This ray is normal to the surface of the lens; (2) a ray A,P,A' parallel to the lens axis is refracted to pass through the focal point F_2 on the opposite side; (3) a ray  A,Q,A' which passes through the focal point F_1 on the side of the object emerges from the lens parallel to the lens axis.
-###################################################################
-
 
 The image is inverted and found on the far side of the focal point away from the lens. The distance from the object to the lens’ nodal plane is BO  and the distance from the image to the lens’ nodal plane is B'O. The height of the real object is H0 and the height of its image is Hi. The object is oriented at a right angle to the lens axis, and so is the image. The geometry of the situation allows us to identify two sets of similar triangles:
 
-1. u = AP = BO  (Distance from the object to the lens)
+1. u = AP = BO  (Distance from the object to the lens’ nodal plane)
  
-2. v = A'Q = B'O- (Distance from the image to the lens)
+2. v = A'Q = B'O- (Distance from the image to the lens’ nodal plane)
 
 3. f = F1-O = F2-O  - (focal length)
 
@@ -27,39 +25,17 @@ Hi = A'B' = QO - (height of its image)
   
 From geometry of figure above, triangles ΔABF1 and ΔOQF1 are similar. 
 
- (u-f)/f=H_o/H_i 
+(u-f)/f=H_o/H_i 
 
 Triangles ΔPOF2 and ΔA'B'F2 are also similar 
 
-  f/(v-f)=H_o/H_i    
+ f/(v-f)=H_o/H_i    
   
-  
-From geometry of figure above, triangles ΔABF1 and ΔOQF1 are similar. 
-
- (u-f)/f=H_o/H_i 
-
-Triangles ΔPOF2 and ΔA'B'F2 are also similar 
-
-  f/(v-f)=H_o/H_i    
-  
- # From the geometry, the thin lens equation may be derived.#
-                                   1/f=1/v+1/u
-  
-  The figure above shows that formation of a real, inverted and diminished image A’B’ of the object AB placed beyond the centre of curvature at a distance u from the convex lens. Let v be the image distance. 
-
-According to Cartesian sign convention,
-
-Object distance (OB) = -u
-
-Image distance (OB’) = +v
-
-Focal length (OF1 = OF2) = +f
-
-From geometry of figure above,  triangles  〖ABF〗_1  ו 〖OQF〗_1 are similar. 
-
+ #From the geometry, the thin lens equation may be derived.
  
-
+ 1/f=1/v+1/u
   
+
   
   
   
