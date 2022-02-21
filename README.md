@@ -201,7 +201,7 @@ NUM_CLASSES = 1
 ```
 We will do all again with SSD resnet.
 
-The resulting output from here([Here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Warning_pic_result) are a few more of our results:)
+Our resulting output:([Here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Warning_pic_result) are a few more of our results:)
 ![image](https://user-images.githubusercontent.com/56115477/154438852-d7807fdb-0a45-42af-a14e-1c44ad643067.png)
  
 
