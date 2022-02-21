@@ -15,13 +15,13 @@ The image is inverted and found on the far side of the focal point away from the
 
 1. u = AP = BO  (Distance from the object to the lens’ nodal plane)
  
-2. v = A'Q = B'O- (Distance from the image to the lens’ nodal plane)
+2. v = A'Q = B'O (Distance from the image to the lens’ nodal plane)
 
-3. f = F1-O = F2-O  - (focal length)
+3. f = F1-O = F2-O  (focal length)
 
-4. H0 = AB = PO =  (height of the real object)
-   - 
-Hi = A'B' = QO - (height of its image)
+4. H0 = AB = PO   (height of the real object)
+    
+Hi = A'B' = QO  (height of its image)
   
 From geometry of figure above, triangles ΔABF1 and ΔOQF1 are similar. 
 
