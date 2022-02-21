@@ -45,7 +45,7 @@ Triangles ΔPOF2 and ΔA'B'F2 are also similar
   
   
   
-  
+ <img src="https://render.githubusercontent.com/render/math?math={\frac{1}{f}=\frac{1}{v} + \frac{1}{u}}> 
   
   
   
