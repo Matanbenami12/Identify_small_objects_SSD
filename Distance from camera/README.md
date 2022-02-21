@@ -35,7 +35,7 @@ Triangles ΔPOF2 and ΔA'B'F2 are also similar
  
  1/f=1/v+{1}{u}
  
- ![formula](https://render.githubusercontent.com/render/math?math=\large\frac{1}{f}=\frac{1}{v} + \frac{1}{u})
+ ![formula](https://render.githubusercontent.com/render/math?math=\large\\frac{1}{f}=\frac{1}{v} + \frac{1}{u})
  
  ![formula](https://render.githubusercontent.com/render/math?math=\large\f(x)=sin(x))
 
