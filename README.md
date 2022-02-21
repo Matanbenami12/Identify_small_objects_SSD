@@ -199,7 +199,8 @@ PATH_TO_LABELS = os.path.join('C:/Users/matan/Desktop/object_detection_project/t
 NUM_CLASSES = 1
 
 ```
-We will do all again with SSD resnet
+We will do all again with SSD resnet.
+
 The resulting output from here
 ![image](https://user-images.githubusercontent.com/56115477/154438852-d7807fdb-0a45-42af-a14e-1c44ad643067.png)
  
