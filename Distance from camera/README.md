@@ -9,12 +9,12 @@ Given an converging lens, MN  straight line passing through the geometrical cent
 Source light A.
 F_1 and F_2 are the focal points of the lens. 
 
-#The image formed by a thin lens can be located by drawing three Kepler rays: (1) a ray  A,O,A' which passes through the center of the lens is unchanged because the lens faces are parallel here and the lens is assumed to be thin. This ray is normal to the surface of the lens; (2) a ray A,P,A' parallel to the lens axis is refracted to pass through the focal point F_2 on the opposite side; (3) a ray  A,Q,A' which passes through the focal point F_1 on the side of the object emerges from the lens parallel to the lens axis.
-
+The image formed by a thin lens can be located by drawing three Kepler rays: (1) a ray  A,O,A' which passes through the center of the lens is unchanged because the lens faces are parallel here and the lens is assumed to be thin. This ray is normal to the surface of the lens; (2) a ray A,P,A' parallel to the lens axis is refracted to pass through the focal point F_2 on the opposite side; (3) a ray  A,Q,A' which passes through the focal point F_1 on the side of the object emerges from the lens parallel to the lens axis.
+###################################################################
 
 
 (Point A' is the imaginary figure)
-From the points' A and A I lower the vertical to the optical axis so that the verticals' B 'A and AB are obtained
+From the points A' and A I lower the vertical to the optical axis, so that the verticals' B 'A and AB are obtained
 According to the lens settings we will mark:
  u = AP = BO  (horizontal distance of the light source from the lens)
  
@@ -35,6 +35,7 @@ Triangles ΔPOF2 and ΔA'B'F2 are also similar
   f/(v-f)=H_o/H_i    
   
  # From the geometry, the thin lens equation may be derived.#
+                                   1/f=1/v+1/u
   
   The figure above shows that formation of a real, inverted and diminished image A’B’ of the object AB placed beyond the centre of curvature at a distance u from the convex lens. Let v be the image distance. 
 
