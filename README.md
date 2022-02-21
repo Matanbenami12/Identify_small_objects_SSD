@@ -201,21 +201,21 @@ NUM_CLASSES = 1
 ```
 We will do all again with SSD resnet.
 
-The resulting output from here
+The resulting output from here([Here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Warning_pic_result) are a few more of our results:)
 ![image](https://user-images.githubusercontent.com/56115477/154438852-d7807fdb-0a45-42af-a14e-1c44ad643067.png)
  
 
 
 Once we identify small objects in image, we decides to move forward and identify object in real-time and Find the object distance from camera:
 
-for identify object in real-time u need to run obj_video.py It's a few edits to our code so we will explain :
+For identify object in real-time u need to run obj_video.py It's a few edits to our code.
 
 
-first we need identify object in real-time here, we can iterate through the boxes for further analysis. Boxes are an array, inside of an array, so, to iterate through them, we need to do:
+First we need identify object in real-time here, we can iterate through the boxes for further analysis. Boxes are an array, inside of an array, so, to iterate through them, we need to do:
 
        for i,b in enumerate(boxes[0]):
        
-Now, for the "too close" tracking, we're interested in some specific classes. One could argue that *any* object that is too close is something we might want to avoid. The deal is, however, that, to determine distance, you need to know the object's size before-hand.
+Now, for the too close tracking, we're interested in some specific classes. One could argue that any object that is too close is something we might want to avoid. The deal is, however, that, to determine distance, you need to know the object's size before-hand.
 
  You can detect other smaller or larger objects in other loops if you like.
 
@@ -224,7 +224,7 @@ Now, for the "too close" tracking, we're interested in some specific classes. On
        if output_dict['detection_classes'][i] == 1: 
         
 
-Next, we want to be fairly certain these are *actually* Warning. For example, in the vis_util.visualize_boxes_and_labels_on_image_array function, the default parameter for drawing boxes is a score of 0.5. We can use the same score of 0.5 or more logic. It's important to note that the object detector actually detects quite a few more objects, you just might not have been aware since only the scores of 0.5 or greater were being drawn.
+Next, we want to be fairly certain these are actually  Warning. For example, in the vis_util.visualize_boxes_and_labels_on_image_array function, the default parameter for drawing boxes is a score of 0.5. We can use the same score of 0.5 or more logic. It's important to note that the object detector actually detects quite a few more objects, you just might not have been aware since only the scores of 0.5 or greater were being drawn.
 
       for i,b in enumerate(boxes[0]):
         #                  Warning       
@@ -245,7 +245,7 @@ using  OpenCV package
    
 
  
- After we cover how to found distance from camera our real object distance is :
+Ones we cover how to found distance from camera, we get that our real object distance from camera is :
  
  apx_distance = round(lenght_warning/(((lenght_warning_image)/focal_length)), 2)
  
@@ -264,7 +264,7 @@ We can write this to the screen with:
     cv2.putText(image_np, 'Warning'. format(apx_distance), (int(mid_x * 800),
              int(mid_y * 600)),cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 3)
 
-The resulting output from here, for example:
+The resulting output from here:
  
  
 ![image](https://user-images.githubusercontent.com/56115477/154444153-f46f650a-568f-4d2e-acba-29173dee111b.png)
