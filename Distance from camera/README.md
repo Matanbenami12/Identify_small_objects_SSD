@@ -21,7 +21,7 @@ The image is inverted and found on the far side of the focal point away from the
 
 4. H0 = AB = PO   (height of the real object)
     
-Hi = A'B' = QO  (height of its image)
+5. Hi = A'B' = QO  (height of its image)
   
 From geometry of figure above, triangles ΔABF1 and ΔOQF1 are similar. 
 
