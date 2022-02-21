@@ -35,7 +35,7 @@ Triangles ΔPOF2 and ΔA'B'F2 are also similar
  
  1/f=1/v+1/u
  
- ![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+ 
 
   
   
@@ -65,5 +65,5 @@ The triangle similarity goes something like this: Let’s say we have a marker o
 ![image](https://user-images.githubusercontent.com/56115477/154443892-c8443a8d-e274-4c95-8071-50e83e549bda.png)
 
 
-
+![formula](https://render.githubusercontent.com/render/math?math=\large\f(x)=sin(x))
 ![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})
