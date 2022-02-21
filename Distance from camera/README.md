@@ -49,13 +49,9 @@ Triangles ΔPOF2 and ΔA'B'F2 are also similar
   
   
   
-  
-  
-  
-  In order to determine the distance from our camera to a known object or marker, we are going to utilize triangle similarity.
-
-The triangle similarity goes something like this: Let’s say we have a marker or object with a known width W. We then place this marker some distance D from our camera. We take a picture of our object using our camera and then measure the apparent width in pixels P. This allows us to derive the perceived focal length F of our camera:
-
+After we understood lens formula we will make a few edits so here is our full explain
+ 
+In order to determine the distance from our camera let see the next image
 
 
 ![image](https://user-images.githubusercontent.com/56115477/154845117-cbdf00a6-925d-4265-a3ec-b6da45ac729e.png)
