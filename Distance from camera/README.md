@@ -5,7 +5,7 @@ First we will look at the following figure to understand Gaussian  lens formula:
 ![image](https://user-images.githubusercontent.com/56115477/154123479-3e4ba37a-54d8-4f5d-81f7-894f132fabc6.png)
   
   
-Given an MN converging lens, MN  straight line passing through the geometrical centre of a lens and joining the two centres of curvature of its surfaces passing through the point O 
+Given an converging lens, MN  straight line passing through the geometrical centre of a lens and joining the two centres of curvature of its surfaces passing through the point O 
 Source light A.
 F_1 and F_2 are the focal points of the lens. 
 
