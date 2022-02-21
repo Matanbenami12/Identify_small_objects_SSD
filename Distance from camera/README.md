@@ -5,11 +5,15 @@ First we will look at the following figure to understand Gaussian  lens formula:
 ![image](https://user-images.githubusercontent.com/56115477/154123479-3e4ba37a-54d8-4f5d-81f7-894f132fabc6.png)
   
   
-Given an MN central lens, an optical axis passing through the point, O and a point light source A.
-The points F_1 and F_2 are the focal points of the lens. I move the three Kepler rays to see where our imaginary figure will be formed:
-The first beam A, O, A 'emerges from the light source and passes through the center of the lens, so it continues straight.
-The second beam A, P, A 'emerges from the light source parallel to the optical axis, refracts and passes through the distant focus. F_2
-The third beam A, Q, A 'emerges from the light source, passes through the nearest focus F_1, and refracts and continues parallel to the optical axis. (Point A' is the imaginary figure)
+Given an MN converging lens, MN  straight line passing through the geometrical centre of a lens and joining the two centres of curvature of its surfaces passing through the point O 
+Source light A.
+F_1 and F_2 are the focal points of the lens. 
+
+#The image formed by a thin lens can be located by drawing three Kepler rays: (1) a ray  A,O,A' which passes through the center of the lens is unchanged because the lens faces are parallel here and the lens is assumed to be thin. This ray is normal to the surface of the lens; (2) a ray A,P,A' parallel to the lens axis is refracted to pass through the focal point F_2 on the opposite side; (3) a ray  A,Q,A' which passes through the focal point F_1 on the side of the object emerges from the lens parallel to the lens axis.
+
+
+
+(Point A' is the imaginary figure)
 From the points' A and A I lower the vertical to the optical axis so that the verticals' B 'A and AB are obtained
 According to the lens settings we will mark:
  u = AP = BO  (horizontal distance of the light source from the lens)
@@ -25,18 +29,12 @@ Q = v 'A = O' B - (the horizontal distance of the figure from the lens)
 From geometry of figure above, triangles ΔABF1 and ΔOQF1 are similar. 
 
  (u-f)/f=H_o/H_i 
- 
- $\frac{(u-f)}{f}$ =  $\frac{H_o}{H_i}$
- 
-\frac{(u-f)}{/f} = \frac{(H_o)}{/H_i}
-
-$\pi$
 
 Triangles ΔPOF2 and ΔA'B'F2 are also similar 
 
   f/(v-f)=H_o/H_i    
   
-  
+ # From the geometry, the thin lens equation may be derived.#
   
   The figure above shows that formation of a real, inverted and diminished image A’B’ of the object AB placed beyond the centre of curvature at a distance u from the convex lens. Let v be the image distance. 
 
