@@ -33,9 +33,9 @@ Triangles ΔPOF2 and ΔA'B'F2 are also similar
   
  From the geometry, the thin lens equation may be derived.
  
- 1/f=1/v+1/u
+ 1/f=1/v+{1}{u}
  
- ![formula](https://render.githubusercontent.com/render/math?math=\large\(1\f)=1\v+1\u)
+ ![formula](https://render.githubusercontent.com/render/math?math=\large\{1}{f}=1\v+1\u)
  
  ![formula](https://render.githubusercontent.com/render/math?math=\large\f(x)=sin(x))
 
