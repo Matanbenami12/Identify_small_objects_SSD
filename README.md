@@ -164,6 +164,7 @@ tensorboard --logdir="C:/Users/matan/Desktop/tensorflow1/models/research/object_
 
 This runs on 127.0.0.1:6006 (visit in your browser)
 
+ TensorBoard graph result are [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/TensorBoard_result)
 
 Now,we're going to export the graph and then test the model.
 
@@ -198,33 +199,119 @@ PATH_TO_LABELS = os.path.join('C:/Users/matan/Desktop/object_detection_project/t
 NUM_CLASSES = 1
 
 ```
+We will do all again with SSD resnet.
 
-We will do all again with SSD resnet
-and compare between SSD_mobilenet to SSD_resnet 
+The resulting output from here
+![image](https://user-images.githubusercontent.com/56115477/154438852-d7807fdb-0a45-42af-a14e-1c44ad643067.png)
+ 
+
+
+Once we identify small objects in image, we decides to move forward and identify object in real-time and Find the object distance from camera:
+
+for identify object in real-time u need to run obj_video.py It's a few edits to our code so we will explain :
+
+
+first we need identify object in real-time here, we can iterate through the boxes for further analysis. Boxes are an array, inside of an array, so, to iterate through them, we need to do:
+
+       for i,b in enumerate(boxes[0]):
+       
+Now, for the "too close" tracking, we're interested in some specific classes. One could argue that *any* object that is too close is something we might want to avoid. The deal is, however, that, to determine distance, you need to know the object's size before-hand.
+
+ You can detect other smaller or larger objects in other loops if you like.
+
+      for i,b in enumerate(boxes[0]):
+        #                 Warning                   
+       if output_dict['detection_classes'][i] == 1: 
+        
+
+Next, we want to be fairly certain these are *actually* Warning. For example, in the vis_util.visualize_boxes_and_labels_on_image_array function, the default parameter for drawing boxes is a score of 0.5. We can use the same score of 0.5 or more logic. It's important to note that the object detector actually detects quite a few more objects, you just might not have been aware since only the scores of 0.5 or greater were being drawn.
+
+      for i,b in enumerate(boxes[0]):
+        #                  Warning       
+        if output_dict['detection_classes'][i] == 1:
+          if output_dict['detection_scores'][i] > 0.8::
+
+
+
+Now, we want to to Find object distance from camera for that we need to know the width for image object and the width for real object and focal length of our camera
+
+
+first To measure the width of the image detected object. We can do this by asking how many pixels-wide the object is. We can do this with:
+ 
+lenght_warning_image=(output_dict['detection_boxes'][i][3]-output_dict['detection_boxes'][i][1])*800  
+
+Then We are going to cover how to found distance from camera to object [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Distance%20from%20camera) 
+using  OpenCV package  
+   
+
+ 
+ After we cover how to found distance from camera our real object distance is :
+ 
+ apx_distance = round(lenght_warning/(((lenght_warning_image)/focal_length)), 2)
  
  
-First SSD_mobilenet take us about 2 dayes to get under 1 and SSD_resnet take us 1 day 
+ For debugging purposes, I would like to display this number on screen. To do this, I am going to display at the following coordinates:
+
+    mid_x = (output_dict['detection_boxes'][i][3]+output_dict['detection_boxes'][i][1]) / 2
+    mid_y = (output_dict['detection_boxes'][i][2]+output_dict['detection_boxes'][i][0]) / 2
+            
+Basically, this displays at left of the detected object, in the middle vertically.
+
+We can write this to the screen with:
+      
+  if apx_distance <= 0.5:
+    print(datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3])
+    cv2.putText(image_np, 'Warning'. format(apx_distance), (int(mid_x * 800),
+             int(mid_y * 600)),cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 3)
+
+The resulting output from here, for example:
+ 
+ 
+![image](https://user-images.githubusercontent.com/56115477/154444153-f46f650a-568f-4d2e-acba-29173dee111b.png)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+   
 
 Now let us see the diffrent
-i84p
-Model name	Speed (ms)	COCO mAP1	Outputs
 
-ssd_mobilenet_v1_coco	30	21	Boxes
-ssd_resnet_101_fpn_oidv4	237	38	Boxes
+Real time identify:
 
 
-
-
-
-
-
-
-we try  a real time image processing and found they distance to how to found a distance in a real time image processinggo [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Distance%20from%20camera) 
+| Model name     | Traning time  | real time Speed (ms) | real time Identify 0.5m|  real time Identify 1m|   
+| -------------  | ------------- | -------------------- | --------------------   | --------------------  |
+| SSD_mobilenet  |     52 hours  |           30         |                        |                       |           
+| SSD_resnet     |     25 hours  |           237        |                        |                       |             
 
 
 
 
-| Model name     | Traning time  |
-| -------------  | ------------- |
-| SSD_mobilenet  |     52 hours  |
-| SSD_resnet     |     25 hours  |
+Images identify:
+  
+  
+|   Identify_small_objects|    |   | 
+|--|--|--|            
+|  SSD_mobilenet | TOP 1 |  TOP 5 |  
+|     0.5 m      |       |        |
+|      1 m       |       |        |
+|     1.5 m      |       |        |
+|   SSD_resnet   | TOP 1 |  TOP 5 |              
+|     0.5 m      |       |        |
+|      1 m       |       |        |
+|     1.5 m      |       |        | 
