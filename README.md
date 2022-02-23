@@ -264,7 +264,7 @@ We can write this to the screen with:
     cv2.putText(image_np, 'Warning'. format(apx_distance), (int(mid_x * 800),
              int(mid_y * 600)),cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 3)
 
-The resulting output from here:
+The resulting output :(Video result [here]())
  
  
 ![image](https://user-images.githubusercontent.com/56115477/154444153-f46f650a-568f-4d2e-acba-29173dee111b.png)
@@ -302,12 +302,17 @@ Real time identify:
 
 
 
-Images identify from 45 images
+Images identify from 60 images 20 image for each 
   
   
-|   Identify_small_objects|       |       |        | 
+|   Identify small objects  |         |        |        | 
 |--|--|--|--|            
-|                        | 0.5 m  |  1 m  |  1.5 m |
-|   SSD_mobilenet        |        |       |        |
-|    SSD_resnet          |        |       |        |
+|Object distance from camera|  0.5 m   |  1 m   |  1.5 m |
+|   SSD_mobilenet           |  #72.65%  | 87.35% | 87.35% |
+|    SSD_resnet             |  #87.35%  | 87.35% | 87.35% |
+
+
+Our results get two options about Identify small objects.
+If our goal is to identify object at Images  we will choose SSD_resnet he its better then SSD_mobilenet.
+But if our goal is to identify object in Real time We will choose SSD_mobilenet, the SSD_mobilenet can't recognize well but SSD_mobilenet detects the object very fast in real time and in real time the speed is important. 
 
