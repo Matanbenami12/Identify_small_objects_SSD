@@ -302,16 +302,12 @@ Real time identify:
 
 
 
-Images identify:
+Images identify from 45 images
   
   
-|   Identify_small_objects|    |   | 
-|--|--|--|            
-|  SSD_mobilenet | TOP 1 |  TOP 5 |  
-|     0.5 m      |       |        |
-|      1 m       |       |        |
-|     1.5 m      |       |        |
-|   SSD_resnet   | TOP 1 |  TOP 5 |              
-|     0.5 m      |       |        |
-|      1 m       |       |        |
-|     1.5 m      |       |        | 
+|   Identify_small_objects|       |       |        | 
+|--|--|--|--|            
+|                        | 0.5 m  |  1 m  |  1.5 m |
+|   SSD_mobilenet        |        |       |        |
+|    SSD_resnet          |        |       |        |
+
