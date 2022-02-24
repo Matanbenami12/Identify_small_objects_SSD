@@ -308,8 +308,8 @@ Images identify from 60 images 20 image for each
 |   Identify small objects  |         |        |        | 
 |--|--|--|--|            
 |Object distance from camera|  0.5 m   |  1 m   |  1.5 m |
-|   SSD_mobilenet           |  #72.65%  | 87.35% | 87.35% |
-|    SSD_resnet             |  #87.35%  | 87.35% | 87.35% |
+|   SSD_mobilenet           |  72.65%  | 73.9% | 71.5% |
+|    SSD_resnet             |  87.35%  | 82.9% | 71.8% |
 
 
 Our results get two options about Identify small objects.
