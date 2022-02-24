@@ -1,4 +1,4 @@
-Percentages of images 0-59 by algorithm
+Percentages of images 0-59 by algorithm  SSD mobilenet and SSD resnet
 
 
 | Image number     | Distance(m)  |  SSD_mobilenet Percent(%)| SSD_resnet Percent(%) |   
