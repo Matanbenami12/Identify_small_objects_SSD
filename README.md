@@ -212,58 +212,58 @@ For identify object in real-time u need to run obj_video.py It's a few edits to 
 
 
 First we need identify object in real-time here, we can iterate through the boxes for further analysis. Boxes are an array, inside of an array, so, to iterate through them, we need to do:
-
+```
        for i,b in enumerate(boxes[0]):
-       
+```       
 Now, for the too close tracking, we're interested in some specific classes. One could argue that any object that is too close is something we might want to avoid. The deal is, however, that, to determine distance, you need to know the object's size before-hand.
 
  You can detect other smaller or larger objects in other loops if you like.
-
+```
       for i,b in enumerate(boxes[0]):
         #                 Warning                   
        if output_dict['detection_classes'][i] == 1: 
         
-
+```
 Next, we want to be fairly certain these are actually  Warning. For example, in the vis_util.visualize_boxes_and_labels_on_image_array function, the default parameter for drawing boxes is a score of 0.5. We can use the same score of 0.5 or more logic. It's important to note that the object detector actually detects quite a few more objects, you just might not have been aware since only the scores of 0.5 or greater were being drawn.
-
+```
       for i,b in enumerate(boxes[0]):
         #                  Warning       
         if output_dict['detection_classes'][i] == 1:
           if output_dict['detection_scores'][i] > 0.8::
 
-
+```
 
 Now, we want to to Find object distance from camera for that we need to know the width for image object and the width for real object and focal length of our camera
 
 
 first To measure the width of the image detected object. We can do this by asking how many pixels-wide the object is. We can do this with:
- 
+``` 
 lenght_warning_image=(output_dict['detection_boxes'][i][3]-output_dict['detection_boxes'][i][1])*800  
-
+```
 Then We are going to cover how to found distance from camera to object [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Distance%20from%20camera) 
 using  OpenCV package  
    
 
  
 Ones we cover how to found distance from camera, we get that our real object distance from camera is :
- 
+```
  apx_distance = round(lenght_warning/(((lenght_warning_image)/focal_length)), 2)
- 
+``` 
  
  For debugging purposes, I would like to display this number on screen. To do this, I am going to display at the following coordinates:
-
+```
     mid_x = (output_dict['detection_boxes'][i][3]+output_dict['detection_boxes'][i][1]) / 2
     mid_y = (output_dict['detection_boxes'][i][2]+output_dict['detection_boxes'][i][0]) / 2
-            
+```            
 Basically, this displays at left of the detected object, in the middle vertically.
 
 We can write this to the screen with:
-      
+```      
   if apx_distance <= 0.5:
     print(datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3])
     cv2.putText(image_np, 'Warning'. format(apx_distance), (int(mid_x * 800),
              int(mid_y * 600)),cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 3)
-
+```
 The resulting output :(Video result [here]())
  
  
@@ -296,7 +296,7 @@ Now let us see the diffrent:
 
 | Model name     | Traning time  | real time Speed (ms) | real time Identify 0.5m|  real time Identify 1m|   
 | -------------  | ------------- | -------------------- | --------------------   | --------------------  |
-| SSD_mobilenet  |     52 hours  |           30         |                        |                       |           
+| SSD_mobilenet  |     52 hours  |           30         |         85-99%         |                       |           
 | SSD_resnet     |     25 hours  |           237        |                        |                       |             
 
 
@@ -312,7 +312,7 @@ Now let us see the diffrent:
 |    SSD_resnet             |  87.35%  | 82.9%   |  71.8%  |
 
 
-Our results get two options about Identify small objects.
+Conclusion about Identify small objects.
 
 If our goal is to identify object in images we choose SSD resnet he is more accurate then SSD mobilenet.
 
