@@ -316,5 +316,5 @@ Our results get two options about Identify small objects.
 
 If our goal is to identify object at Images  we will choose SSD_resnet he its better then SSD_mobilenet.
 
-But if our goal is to identify object in Real time We will choose SSD_mobilenet, the SSD_mobilenet can't recognize well but SSD_mobilenet detects the object very fast in real time and in real time the speed is important. 
+But if our goal is to identify object in Real time We will choose SSD_mobilenet, the SSD_mobilenet can't recognize well but SSD_mobilenet detects the object very fast in real time and in real time the detect speed is important. 
 
