@@ -1,5 +1,5 @@
 
-In order to determine the distance from our camera to a known object , we are going to use Gaussian  lens formula with few edits for our project .
+In order to determine the distance from our camera to a known object , we are going to use Gaussian lens formula with few edits for our project .
 First we will look at the following figure to understand Gaussian  lens formula: 
  
 ![image](https://user-images.githubusercontent.com/56115477/154123479-3e4ba37a-54d8-4f5d-81f7-894f132fabc6.png)
@@ -49,7 +49,7 @@ Triangles ΔPOF2 and ΔA'B'F2 are also similar
   
   
   
-After we understood lens formula we will make a few edits so here is our full explain
+After we understood lens formula we will make a few edits to lens formula for our project so here are full explain
  
 In order to determine the distance from our camera let see the next image
 
