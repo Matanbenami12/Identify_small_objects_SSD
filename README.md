@@ -312,7 +312,7 @@ Now let us see the diffrent:
 |    SSD_resnet             |  87.35%  | 82.9%   |  71.8%  |
 
 
-Our results get two options about Identify small objects.
+Conclusion about Identify small objects.
 
 If our goal is to identify object in images we choose SSD resnet he is more accurate then SSD mobilenet.
 
