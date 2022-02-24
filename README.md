@@ -289,9 +289,9 @@ The resulting output :(Video result [here]())
  
    
 
-Now let us see the diffrent
+Now let us see the diffrent:
 
-Real time identify:
+1.Real time identify:
 
 
 | Model name     | Traning time  | real time Speed (ms) | real time Identify 0.5m|  real time Identify 1m|   
@@ -302,19 +302,19 @@ Real time identify:
 
 
 
-Images identify from 60 images 20 image for each 
+2.Images identify from 60 images.
   
   
-|   Identify small objects  |         |        |        | 
+|   Identify small objects  |20 images |20 images|20 images| 
 |--|--|--|--|            
-|Object distance from camera|  0.5 m   |  1 m   |  1.5 m |
-|   SSD_mobilenet           |  72.65%  | 73.9% | 71.5% |
-|    SSD_resnet             |  87.35%  | 82.9% | 71.8% |
+|Object distance from camera|  0.5 m   |  1 m    |  1.5 m  |
+|   SSD_mobilenet           |  72.65%  | 73.9%   |  71.5%  |
+|    SSD_resnet             |  87.35%  | 82.9%   |  71.8%  |
 
 
 Our results get two options about Identify small objects.
 
-If our goal is to identify object at Images  we will choose SSD_resnet he its better then SSD_mobilenet.
+If our goal is to identify object in images we choose SSD resnet he is more accurate then SSD mobilenet.
 
-But if our goal is to identify object in Real time We will choose SSD_mobilenet, the SSD_mobilenet can't recognize well but SSD_mobilenet detects the object very fast in real time and in real time the detect speed is important. 
+But if our goal is to identify object in Real time we will choose SSD mobilenet, the SSD mobilenet can't recognize well but SSD_mobilenet detects the object very fast in real time and in real time the detect speed is important. 
 
