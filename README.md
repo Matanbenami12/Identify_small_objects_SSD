@@ -264,7 +264,7 @@ We can write this to the screen with:
     cv2.putText(image_np, 'Warning'. format(apx_distance), (int(mid_x * 800),
              int(mid_y * 600)),cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 3)
 ```
-The resulting output :(Video result [here]())
+The resulting output :(Video result [here](https://github.com/Matanbenami12/Identify_small_objects_SSD/tree/main/Warning_video_result))
  
  
 ![image](https://user-images.githubusercontent.com/56115477/154444153-f46f650a-568f-4d2e-acba-29173dee111b.png)
@@ -294,10 +294,10 @@ Now let us see the diffrent:
 1.Real time identify:
 
 
-| Model name     | Traning time  | real time Speed (ms) | real time Identify 0.5m|  real time Identify 1m|   
-| -------------  | ------------- | -------------------- | --------------------   | --------------------  |
-| SSD_mobilenet  |     52 hours  |           30         |         85-99%         |                       |           
-| SSD_resnet     |     25 hours  |           237        |                        |                       |             
+| Model name     | Traning time  | real time Speed (ms) | real time Identify 0.5-0.8m|   
+| -------------  | ------------- | -------------------- | --------------------       | 
+| SSD_mobilenet  |     52 hours  |           30         |         75-99%             |                  
+| SSD_resnet     |     25 hours  |           237        |       not detection        |             
 
 
 
@@ -316,5 +316,5 @@ Conclusion about Identify small objects.
 
 If our goal is to identify object in images we choose SSD resnet he is more accurate then SSD mobilenet.
 
-But if our goal is to identify object in Real time we will choose SSD mobilenet, the SSD mobilenet can't recognize well but SSD_mobilenet detects the object very fast in real time and in real time the detect speed is important. 
+But if our goal is to identify object in Real time we will choose SSD mobilenet, the SSD mobilenet  recognize well and detects the object very fast in real time  
 
