@@ -296,7 +296,7 @@ Now let us see the diffrent:
 
 | Model name     | Traning time  | real time Speed (ms) | real time Identify 0.5m|  real time Identify 1m|   
 | -------------  | ------------- | -------------------- | --------------------   | --------------------  |
-| SSD_mobilenet  |     52 hours  |           30         |                        |                       |           
+| SSD_mobilenet  |     52 hours  |           30         |         85-99%         |                       |           
 | SSD_resnet     |     25 hours  |           237        |                        |                       |             
 
 
